@@ -167,3 +167,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* ==========================================
+   ADAPTATION MOBILE (ÉCRANS DE MOINS DE 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* Empêche les images de dépasser de l'écran */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Empêche le défilement horizontal */
+  body {
+    overflow-x: hidden;
+  }
+}
