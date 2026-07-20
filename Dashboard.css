@@ -167,10 +167,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* ==========================================
-   ADAPTATION MOBILE (ÉCRANS DE MOINS DE 768px)
-   ========================================== */
-@media (max-width: 768px) {
+/* 48em équivaut à 768px (768 / 16) */
+@media (max-width: 48em) {
 
   /* Empêche les images de dépasser de l'écran */
   img {
@@ -182,4 +180,8 @@ body {
   body {
     overflow-x: hidden;
   }
+}
+body {
+  width: 100dvw; /* S'adapte en temps réel à la largeur exacte de l'écran */
+  overflow-x: hidden;
 }
