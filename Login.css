@@ -128,42 +128,54 @@ footer a:hover {
      color: rgba(255,255,255,0.5);
      text-decoration: none;
 }
-/* 48em équivaut à 768px (768 / 16) */
-@media (max-width: 48em) {
+/* ==========================================
+   FORMAT MOBILE PARFAIT (RESPONSIVE)
+   ========================================== */
 
-  /* Empêche les images de dépasser de l'écran */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 
-  /* Empêche le défilement horizontal */
-  body {
-    overflow-x: hidden;
-  }
-}
-body {
-  width: 100dvw; /* S'adapte en temps réel à la largeur exacte de l'écran */
-  overflow-x: hidden;
-}
-/* Le conteneur de tes boutons d'humeur */
-.moodss {
-  display: flex;
-  flex-wrap: wrap;       /* 👈 Permet aux boutons de revenir à la ligne */
-  justify-content: center; /* Centre les boutons joliment */
-  gap: 8px;              /* Ajoute un petit espace entre chaque bouton */
-  width: 100%;
-}
-input[type="text"], 
-button {
-  width: 100%;           /* Occupe toute la largeur disponible */
-  max-width: 100%;       /* Ne dépasse jamais de l'écran */
-  box-sizing: border-box; /* Inclut le rembourrage dans la taille totale */
-}
+
+/* 5. Écrans mobiles (moins de 768px) */
 @media (max-width: 768px) {
-  body, .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    overflow-x: hidden; /* Coupe tout dépassement restant */
+  /* 1. Évite que le padding n'agrandisse les éléments */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Empêche le débordement sur les côtés du téléphone */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Marge interne pour ne pas coller aux bords de l'écran */
+body {
+  padding: 0 15px;
+}
+
+/* 4. Adaptation des champs de texte et des gros boutons */
+input, select, textarea, button {
+  max-width: 100%;
+}
+  /* Force le conteneur principal à s'adapter */
+  main, .container, #app {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* Force la zone des boutons d'humeur à passer à la ligne */
+  /* (Remplace .moods par le nom de la classe qui englobe tes boutons) */
+  .moods, .tags, .buttons-container {
+    display: flex !important;
+    flex-wrap: wrap !important; /* Reviens à la ligne automatiquement */
+    justify-content: center !important;
+    gap: 8px !important; /* Espace propre entre chaque badge */
+  }
+
+  /* Ajuste la taille du texte sur mobile */
+  h1 {
+    font-size: 2rem;
   }
 }
