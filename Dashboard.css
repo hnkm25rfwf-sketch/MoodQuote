@@ -187,10 +187,10 @@ body {
 
 /* 3. Marge interne pour ne pas coller aux bords de l'écran */
 body {
-  height: auto;
+  margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  background: #fffefe;
 }
 
 /* 4. Adaptation des champs de texte et des gros boutons */
@@ -237,9 +237,12 @@ input, select, textarea, button {
   position: absolute;
   }
   .dash-mood, .dash-morningd, .dash-date,.dash-name {
-    font-size: 0.675rem;
+    font-size: 0.85rem;
   }
   .dash-mood {
     width: 100%;
+  }
+  .small-container {
+    margin-top: 4.5%;
   }
 }
