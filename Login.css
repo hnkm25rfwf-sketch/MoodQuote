@@ -141,18 +141,17 @@ footer a:hover {
   box-sizing: border-box;
 }
 
-/* 2. Empêche le débordement sur les côtés du téléphone */
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
+.container{
+    height: auto;
 }
+
 
 /* 3. Marge interne pour ne pas coller aux bords de l'écran */
 body {
   padding: 0 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 4. Adaptation des champs de texte et des gros boutons */
