@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+  <div class="large-container">
+  <div class="header" id="dash-header"> <!--container header-->
+      <div class="dash-mood" id="dash-mood-tag">Humeur : Motivé.e</div>
+      <div class="small-partofheader">
+      <div class="dash-morningd">Salut !!!</div>
+      <div class="dash-name" id="dash-name">Mouhamed</div>
+      <div class="dash-date" id="dash-date">Mercredi 8 juillet 2026</div>
+      </div>
+  </div>
+  <div class="small-container">
+  <div class="dash-citation-container"> <!--container citation-->
+      <div class="dash-cit-header">Citation du moment</div>
+      <div class="dash-citation" id="citation"></div>
+      <div class="dash-auteur" id="auteur"></div>
+  </div>
+  <div class="dash-link-container"> <!--container lien ytb-->
+      <div class="dash-header-link" id="objectif"></div>
+      <div class="dash-click">Click sur le lien ci-dessous pour vous ressourcer.</div>
+      <a class="dash-ytb" id="yt-link" href="#" target="_blank">
+         <div class="logo-ytb" >▶</div>
+         ▶   Vidéo pour booster ton mood ↗</a>
+  </div>
+  <div class="dash-notebook-container"> <!--container notebook-->
+      <div class="dash-header-notebook">Mon notebook</div>
+      <textarea class="dash-notebookspace"></textarea>
+      <div class="dash-footer">Vos notes restent tant que la page est ouverte.</div>
+       <input type="submit" value="✔️" class="Terminer" onclick="f1();">
+  </div>
+  </div>
+  </div>
+<script src="Dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MoodQuote</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+  <div class="container">  
+        <!--logo projet-->
+    <div class="logo">MoodQuote</div> 
+       <!--Juste after le logo-->
+        <div class="wh-up">Comment vous-sentez vous ?</div> 
+        <div class="Name">Prénom</div>
+        <input type="text" class="fake-input" id="Name-input" name="Prénom" placeholder="Entrez votre Prénom..." oninput="filtrerSaisie(this)">
+        <div class="mood-label">Ton humeur du moment</div>
+           <!--les moods-->  
+   <div class="moodss">
+            <div class="mood">Motivé.e</div>
+            <div class="mood">Joyeux.se</div>
+            <div class="mood">Serein.e</div>
+            <div class="mood">Pensif.ve</div>
+            <div class="mood">Triste</div>
+            <div class="mood">Fatigué.e</div>
+            <div class="mood">Nostalgique</div>
+            <div class="mood">Seul.e</div>
+            <div class="mood">Procrastinateur.trice</div>
+            <div class="mood">Peu confiant.e</div>
+            <div class="mood">Perdu.e</div>
+            <div class="mood">Stressé.e</div>
+            <div class="mood">Fâché.e</div>
+            <div class="mood">Frustré.e</div>
+          </div>
+     <button class="Fix-mood" id="btn-fix">Fix my mood ✨</button>
+        </div>
+        <footer>
+            Développé par Mouhamed DIEME —
+                  <a href="CV_Mouhamed_DIEME.pdf" target="_blank" class="CV">Mon CV</a>
+        </footer>
+ <script src="MoodQuote.js"></script>
+</body>
+</html>

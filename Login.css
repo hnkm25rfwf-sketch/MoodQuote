@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;   
+    max-width: 100%;     
+    background-color: #0f0f1a;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    color: #c9a8f5;
+    text-align: center;
+}
+
+.Name {
+    font-size: 0.9375rem;
+    color: #7a7a9a;
+}
+
+.wh-up {
+    font-size: 0.9rem;
+    color: #c0c0e0;
+    margin-bottom: -0.5rem;
+    text-align: center;
+}
+
+.mood-label {
+    font-size: 0.9375rem;
+    color: #7a7a9a;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+    width: 32.5rem;  
+    height: 28.125rem;          
+    padding: 2.5rem;
+    background-color: #1a1a2e;
+    border-radius: 1.25rem;
+    gap: 1rem;   
+}
+
+.fake-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 0.0625rem solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.625rem;
+    padding: 0.625rem 0.875rem;
+    color: #c0c0e0;
+    font-size: 0.8125rem;
+    box-sizing: border-box;
+}
+
+.moodss {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.mood {
+    border-radius: 50%;
+    padding: 0.3125rem 0.75rem; 
+    border-radius: 1.25rem;
+    font-size: 0.9375rem;
+    border: 0.0625rem solid rgba(255, 255, 255, 0.15); 
+    color: #c0c0e0;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.mood:hover {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    margin-bottom: -0.125rem;
+    transform: scale(0.97);        
+    transition: all 0.15s ease; 
+    box-shadow: inset -0.4375rem 0.3125rem 0.625rem rgb(51, 52, 99);  
+}
+
+.Fix-mood {
+    width: 100%;
+    padding: 0.8125rem;
+    background: #6c3fa0;
+    border: none;
+    border-radius: 0.625rem;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 1.5625rem;
+}
+
+.Fix-mood:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+    transition: all 0.15s ease;
+}
+
+.Fix-mood:active {
+    transform: scale(0.87);
+}
+
+.selected {
+    background: #6c3fa0;
+    border-color: #9b6dd0;
+    color: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 2%;      
+  left: 2%;       
+  font-size: 75%;     
+  color: rgba(255, 255, 255, 0.4);
+  font-family: sans-serif;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.CV {
+     color: rgba(255,255,255,0.5);
+     text-decoration: none;
+}
