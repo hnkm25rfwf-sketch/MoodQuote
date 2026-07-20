@@ -146,3 +146,24 @@ body {
   width: 100dvw; /* S'adapte en temps réel à la largeur exacte de l'écran */
   overflow-x: hidden;
 }
+/* Le conteneur de tes boutons d'humeur */
+.moodss {
+  display: flex;
+  flex-wrap: wrap;       /* 👈 Permet aux boutons de revenir à la ligne */
+  justify-content: center; /* Centre les boutons joliment */
+  gap: 8px;              /* Ajoute un petit espace entre chaque bouton */
+  width: 100%;
+}
+input[type="text"], 
+button {
+  width: 100%;           /* Occupe toute la largeur disponible */
+  max-width: 100%;       /* Ne dépasse jamais de l'écran */
+  box-sizing: border-box; /* Inclut le rembourrage dans la taille totale */
+}
+@media (max-width: 768px) {
+  body, .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    overflow-x: hidden; /* Coupe tout dépassement restant */
+  }
+}
