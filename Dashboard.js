@@ -188,8 +188,12 @@ if ( humeur === "Triste" ) {
    document.querySelector("#auteur").style.color = "#185FA5";
 }
 if ( humeur === "Fatigué.e" ) {
+   document.getElementById("dash-mood-tag").style.backgroundColor = "#fffefe28";
    document.querySelector(".dash-cit-header").style.color = "#4c5354"; 
    document.querySelector("#objectif").style.color = "#4c5354";
+   document.getElementById("dash-header").style.backgroundImage = "url(sad.jfif)"
+   document.getElementById("dash-header").style.backgroundSize = "50%"
+   document.getElementById("dash-header").style.backgroundPosition = "center"
    document.querySelector(".dash-header-notebook").style.color = "#4c5354";
    document.querySelector("#auteur").style.color = "#4c5354";
 }
